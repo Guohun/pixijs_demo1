@@ -1,0 +1,35 @@
+/* Styles for buttons */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Primary button style */
+.sButton-class {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+
+/* Secondary button style */
+.eButton-class{
+    background-color: #008CBA; /* Blue */
+    color: white;
+}
+
+/* Hover effect */
+.button-class:hover {
+    background-color: #45a049; /* Darker green */
+}
+
+/* Hover effect for secondary button */
+.eButton-class:hover {
+    background-color: #005f79; /* Darker blue */
+}

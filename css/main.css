@@ -1,0 +1,274 @@
+
+body{
+    background-color: white;
+    background-size: cover;
+    background-attachment: fixed; 
+    text-align:left;
+
+    font-size:0.85em;
+    line-height:1.5em;
+    margin: auto;
+    width: 1000px;
+	vertical-align:baseline;
+	-webkit-font-smoothing: antialiased
+}
+
+a{color: #f47920; text-decoration:none;}
+a.current{color: #52739e;}
+a.current:hover{color: #e82945;}
+a:hover{color: #b2132e;}
+a:active{color: #e82945;}
+h1{
+	clear:left;
+	color: #8f4b2e;
+	margin:1.5em auto 1em auto;
+	text-shadow: 1px 1px 2px #d0d0d0;
+	/* width:1000px; */
+	line-height:45px;
+	
+}
+h2,h3,h4{clear:left; color: #8f4b2e; margin:1.5em auto 1em auto; text-shadow: 1px 1px 2px #d0d0d0;}
+h1{font-size:2.67em;}
+h2{font-size:2.00em;}
+h3{font-size:1.67em;}
+h4{font-size:1.33em;}
+p{
+ list-style:none;
+ margin:24px auto 24px auto; 
+ padding:0px; width:900px; 
+ text-align:left;}
+li a, p a {text-decoration:none; text-decoration-color:#b8860b;}
+ul{
+ margin:24px auto 24px auto;
+ padding:0px;
+ width:800px; 
+ text-align:left;}
+ul li{margin:0px auto 0px auto; padding:0px; text-align:left;}
+i,em{font-style:italic;}
+b,strong{font-weight:bold;}
+sup{
+    vertical-align: super;
+    font-size: 0.8em;
+    line-height: 0;
+}
+
+.nav {
+  display: inline-flex;
+  overflow: hidden;
+/*  max-width: 120%; */
+  background-color: #fff;
+  padding: 1px 0px 0px 0px;
+  position: relative;
+  left:0px;
+  top:0px;
+  font-size: 16px;
+  /* margin: ; */
+
+/*  border-radius: 40px; */
+/*  box-shadow: 0 10px 40px rgba(159, 162, 177, 0.8); */
+}
+
+#ul_title{
+	margin: auto;/*框框整体的位置，auto控制的是左右距离为自动调节*/
+ 	width: 1000px;/*框框的长度*/
+	height: 70px;/*框框的宽度*/ 
+	position: relative;
+	/* left:0.9375rem;*/
+	/*top:0.9375rem; */
+	padding: 0px 0px 0px 0px;
+	
+}
+.nav-img{
+	list-style-type: none;
+	float: left;
+}
+.nav-item {
+  /* color: #83818c; */
+  padding: 20px;
+  text-decoration: none;
+  transition: .3s;
+  margin: 0 6px;
+  z-index: 1;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  position: relative;
+  list-style-type: none;
+  float: left;
+  font-size: 20px;
+}
+#contacts{
+	position: relative;
+	left: 10px;
+	top: 30px;
+}
+
+.nav-item:before {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background-color: #dfe2ea;
+  border-radius: 8px 8px 0 0;
+  opacity: 0;
+  transition: .3s;
+  
+}
+.author{
+	/*上 右 下 左*/
+	margin:5px 5px 5px 7px;
+	/* color: #f26522; */
+	color: #aa2116;
+	
+}
+	
+.org{
+	
+
+}
+	
+.orgs{
+	display: flex;
+	/* position:relative;
+	left:0px;
+	top: 16px; */
+	margin: auto;/*框框整体的位置，auto控制的是左右距离为自动调节*/
+	width: 1050px;/*框框的长度*/
+	height: 70px;/*框框的宽度*/ 
+	list-style-type: none;
+	text-decoration: none;
+	
+}
+
+
+span.submission {
+    color: #ab8121;
+    border: 1px solid #ab8121;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-bottom: 7px;
+    padding-top: 7px;
+    margin-right: 5px;
+}
+
+.organizers{
+	flex: 1;
+	list-style-type: none;
+	text-decoration: none;
+	/* position:relative;
+	left:0px;
+	top: 16px; */
+/* 	margin: 0px 100px 0px 100px; */
+	
+}
+
+a{
+	color: #f47920; 
+	text-decoration:none;
+}
+
+.nav-item:not(.is-active):hover:before {
+  opacity: 1;
+  bottom: 0;
+}
+
+.nav-item:not(.is-active):hover {
+  color: #d71345;
+}
+
+.nav-indicator {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 4px;
+  transition: .4s;
+  height: 5px;
+  z-index: 1;
+  border-radius: 8px 8px 0 0;
+}
+
+@media (max-width: 580px) {
+  .nav {
+    overflow: auto;
+  }
+}
+
+/* a
+{
+	background-color:#fedcbd;
+} */
+sub{
+    vertical-align: sub;
+    font-size: 0.8em;
+    line-height: 0;
+}
+table{
+    width: 1000px;
+    margin: 12px auto 24px auto;
+    /* float: center; */
+    /* UNCOMMENT THIS FOR DEBUGGING THE ALIGNMENT */
+    /*border: 1px solid black;*/
+}
+th,td{
+    text-align: center;
+    padding:5px 5px 5px 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* UNCOMMENT THIS FOR DEBUGGING THE ALIGNMENT */
+    /*border: 1px solid black;*/
+}
+
+/* Website Banner */
+.banner {position: relative; font-family:'Roboto Slab',serif;}
+.top-left {color: #fafafa; line-height: 1.5em; text-align: left; width: auto; height: 100px; position: absolute; padding: 0px 0px 27px 36px; top: 27px;}
+.top-left br {content: ""; margin: 1.5em; display: block;font-size: 100%;}
+.bottom-right {font-size:2.167em; color: #fafafa; line-height: 1.5em; width: auto; height: 100px; padding: 0px 27px 0px 0px; text-align: right; position: absolute; bottom: 0px; right: 0px; text-shadow: 0px 0px 12px #000000;}
+
+/* Conference Title Logo */
+.title1{font-size: 2.167em; color: #fafafa;} 
+.title2{font-size: 4.33em; color: #b2132e; text-shadow: 0px 0px 4px #fafafa;}
+.year{font-size: 4.33em; color: #fafafa;}
+
+/* Navigation Links (Home, Registration, etc) */
+table.navigation{width:900px;}
+td.navigation{font-size:1.67em; white-space:nowrap; width:20%; text-align:center; vertical-align:middle;}
+td.subnavigation{font-size:1.33em; white-space:nowrap; width:20%; text-align:center; vertical-align:middle;}
+
+/* Organizer and Sponsor Images */
+table.sponsors{width:900px; table-layout: fixed;}
+td.sponsor{white-space:nowrap; width:25%; text-align:center; vertical-align:middle; padding:0px 0px 0px 0px;}
+td.sponsor img{width: 100%}
+    
+/* The Table on the Program Page */
+td.room{padding: 4px 12px 4px 4px; width: 90%; vertical-align:bottom; font-size:1.67em; color: #52739e; height:32px;}
+td.date{white-space:nowrap; width:130px; text-align:right; vertical-align:top; padding:4px 16px 0px 0px;}
+td.title{padding: 4px 12px 4px 4px; width: 90%; vertical-align:top; font-size:1.5em; color: #813c54; height:32px; font-family:'Roboto Slab',serif; text-shadow: 1px 1px 2px #d0d0d0; }
+td.title-special{padding: 4px 12px 4px 4px; width: 90%; vertical-align:top; font-size:1.67em; color: #52739e; height:32px; font-family:'Roboto Slab',serif; text-shadow: 1px 1px 2px #d0d0d0;}
+td.speaker{padding: 4px 12px 4px 4px; font-style: italic; font-size:1em; max-height:999999px}
+td.abstract{padding: 4px 12px 12px 4px; font-size:1em; max-height:999999px}
+td.abstract img{display: block; margin: 4px auto 8px auto}
+table.plenary{padding-top: 8px; background: #ffffff;}
+
+/* Registration and Directions iframes and Images */
+iframe.registration{display:block; margin:1em auto 2em auto; width:700px; height:1400px; border:none;}
+iframe.directions{display:block; margin:1em auto 2em auto; width:800px; height:400px; border:none;}
+img.center{display:block; width:67%; margin:1em auto 2em auto;}
+
+/* Flyer Images */
+table.flyers{width:800px;}
+td.flyer{white-space:nowrap; width:50%; text-align:center; vertical-align:middle; padding:0px 0px 0px 0px;}
+td.sponsor img{width: 100%}
+
+footer{font-size:0.875em; margin-top:12em; text-align:center;}
+
+/* My hacky way of making the site mobile-friendly */
+@media only screen and (max-width: 1100px) {
+    h2{font-size:3.00em;}
+    p{font-size:1.5em; line-height:1.5em;}
+    th,td,tr{font-size:1.5em; line-height:1.5em;}
+    td.date{font-size:1em; padding-top:0.5em;}
+    td.navigation{font-size:1.5em; padding:0px 20px 0px 20px;}
+    table.footer{font-size:0.33em;}
+}
+
